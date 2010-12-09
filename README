@@ -18,14 +18,16 @@ Notes:
 	3) Many resolutions/formats are not working yet... For example: The kinect will only agree to output VGA resolution.
 	4) I don't have a linux machine so I didn't try it, but my guess is that it would work just fine...
 
-PrimeSense NITE algorithim:
+PrimeSense NITE algorithm:
 	If you want to try it please do the following:
+
 	1) Install OpenNI (from www.openni.org)
 	2) Install Sensor (this version...)
 	3) Install NITE (from www.openni.org)
 	4) Run the NiViewer sample to make sure depth & image streams are working.
-	5) Run the NiUserTracker sample play with the skeleton.
-
+	5) Run the NiUserTracker sample play with the skeleton. Don't forget to start with the calibration pose! (Explained in the PDFs)
+	6) Some of NITE samples are using 320x240 resolution. You need to change it to 640x480 in the XML files inside the Data directory.
+	7) Try the Sample-PointViewer sample for hand tracking demo.
 
 Release Notes:
 --------------
