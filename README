@@ -1,6 +1,31 @@
-PrimeSensor Modules for OpenNI
+SensorKinect Module for OpenNI
 ------------------------------
-Website: www.primesense.com
+
+Kinect Mod:
+-----------
+
+It seems that the PrimeSensor and the Kinect are almost 100% identical!
+
+Changes:
+	1) Added the kinect USB VID/PID to the PSDrv3 driver and to the code.
+	2) Changed the packet sequence field from 16-bit to 8-bit (don't know why it's different...)
+	3) Changed the image format from YUV to 8-bit uncompressed bayer in the GlobalDefaults.ini file.
+	4) Fixed the software depth-to-RGB registration. (Thanks ROS.org for that!)
+
+Notes:
+	1) The precompiled windows version is inside the BIN directory. Since the driver is not signed, you might have to install it manually.
+	2) Since I've used VS2010 to build the driver, you will need to have the VS2010 redist installed.
+	3) Many resolutions/formats are not working yet... For example: The kinect will only agree to output VGA resolution.
+	4) I don't have a linux machine so I didn't try it, but my guess is that it would work just fine...
+
+PrimeSense NITE algorithim:
+	If you want to try it please do the following:
+	1) Install OpenNI (from www.openni.org)
+	2) Install Sensor (this version...)
+	3) Install NITE (from www.openni.org)
+	4) Run the NiViewer sample to make sure depth & image streams are working.
+	5) Run the NiUserTracker sample play with the skeleton.
+
 
 Release Notes:
 --------------
