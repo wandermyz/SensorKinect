@@ -34,10 +34,10 @@
 //---------------------------------------------------------------------------
 // Defines
 //---------------------------------------------------------------------------
-#define XN_SENSOR_VENDOR_ID			0x1D27
+#define XN_SENSOR_VENDOR_ID			0x045E
 #define XN_SENSOR_2_0_PRODUCT_ID	0x0200
 #define XN_SENSOR_5_0_PRODUCT_ID	0x0500
-#define XN_SENSOR_6_0_PRODUCT_ID	0x0600
+#define XN_SENSOR_6_0_PRODUCT_ID	0x02AE
 
 #if XN_PLATFORM == XN_PLATFORM_WIN32
 	#include <initguid.h>

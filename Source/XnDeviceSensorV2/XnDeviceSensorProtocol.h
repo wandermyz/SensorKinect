@@ -88,7 +88,8 @@ typedef struct XnSensorProtocolResponseHeader
 {
 	XnUInt16 nMagic;
 	XnUInt16 nType;
-	XnUInt16 nReserve;
+	XnUInt8  nReserve;
+	XnUInt8  nUnknown;
 	XnUInt16 nBufSize;
 	XnUInt32 nTimeStamp;
 } XnSensorProtocolResponseHeader;

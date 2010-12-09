@@ -37,14 +37,14 @@ SetCompressor ZLIB
 ;*** General ***
 ;***************
 !define EE_VER "5.0.0"
-!define EE_NAME "PrimeSensor ${EE_VER} for Windows"
+!define EE_NAME "PrimeSensor ${EE_VER} for Windows (Kinect Mod)"
 !define env_hklm 'HKLM "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"'
 !define OPENNI_VER "1.0.0"
 !define OPENNI_NAME "PrimeSense - OpenNI ${OPENNI_VER} for Windows"
 Var OPEN_NI_INST
 
 Name "${EE_NAME}"
-OutFile "Output\Sensor-Win32-${EE_VER}.exe"
+OutFile "Output\SensorKinect-Win32-${EE_VER}.exe"
 InstallDir "$PROGRAMFILES\Prime Sense\Sensor"
 
 ;*******************************
@@ -125,6 +125,9 @@ Section "Sensor" Sensor
   File "/oname=$INSTDIR\Bin\XnDeviceFile.dll" ..\redist\Bin\XnDeviceFile.dll
   File "/oname=$INSTDIR\Bin\XnSensorServer.exe" ..\redist\Bin\XnSensorServer.exe
   File "/oname=$INSTDIR\Data\GlobalDefaults.ini" ..\redist\Data\GlobalDefaults.ini
+
+  SetOutPath "$INSTDIR\Driver"
+  File /r ..\driver\*.*
   
   ; Register it in OpenNI
   ReadRegStr $OPEN_NI_INST HKLM "Software\OpenNI" "InstallDir"
