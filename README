@@ -27,6 +27,7 @@ PrimeSense NITE algorithm:
 	6) Try the NITE/Sample-PointViewer sample for the hand tracking demo.
 
 	Note: All of the NITE samples are using 320x240 resolution. You need to change it to 640x480 in the XML files inside the Data directory.
+	      I have prepared preconfigured XMLs in the "NITE\Data" dir. Just copy them to "c:\Program Files\Prime Sense\NITE\Data".
 
 TIPs:
 	1) If you want to see the IR stream, edit the "OpenNI\Data\SamplesConfig.xml" file and change all the "Image" words into "IR".
