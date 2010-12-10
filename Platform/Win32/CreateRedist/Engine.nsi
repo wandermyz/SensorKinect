@@ -129,6 +129,9 @@ Section "Sensor" Sensor
   SetOutPath "$INSTDIR\Driver"
   File /r ..\driver\*.*
   
+  SetOutPath "$INSTDIR\Tools"
+  File /r ..\tools\*.*
+
   ; Register it in OpenNI
   ReadRegStr $OPEN_NI_INST HKLM "Software\OpenNI" "InstallDir"
   ; Also add OPEN_NI_INSTALL_PATH to current environment (current environment is not updated by writing to registry)
@@ -137,6 +140,16 @@ Section "Sensor" Sensor
   IfErrors FailedToRegister
   ExecWait '"$OPEN_NI_INST\Bin\niReg.exe" "$INSTDIR\Bin\XnDeviceSensorV2.dll" "$INSTDIR\Data"'
   IfErrors FailedToRegister
+
+  ; Install the visual studio 2010 DLLs
+  ExecWait '"$INSTDIR\Tools\vcredist_x86.exe" /q'
+
+  ; Install the USB Driver
+  ${If} ${RunningX64} 
+    ExecWait '"$INSTDIR\Driver\dpinst-amd64.exe" /sw /el'
+  ${Else}
+    ExecWait '"$INSTDIR\Driver\dpinst-x86.exe" /sw /el'
+  ${EndIf} 
   
   ; Create an uninstaller
   WriteUninstaller "$INSTDIR\Uninstall EE ${EE_VER}.exe"

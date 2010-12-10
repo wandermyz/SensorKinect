@@ -4,19 +4,17 @@ SensorKinect Module for OpenNI
 Kinect Mod:
 -----------
 
-It seems that the PrimeSensor and the Kinect are almost 100% identical!
-
 Changes:
+v0.2:
+	1) VS2010 redist will now be installed automatically.
+	2) The driver will now also be installed automatically on both x86 and x64 machines.
+	3) Turned off the IR projector anti-cover thingy. It is off on the Xbox360 so it must be safe and it was very annoying...
+
+v0.1:
 	1) Added the kinect USB VID/PID to the PSDrv3 driver and to the code.
 	2) Changed the packet sequence field from 16-bit to 8-bit (don't know why it's different...)
 	3) Changed the image format from YUV to 8-bit uncompressed bayer in the GlobalDefaults.ini file.
 	4) Fixed the software depth-to-RGB registration. (Thanks ROS.org for that!)
-
-Notes:
-	1) The precompiled windows version is inside the BIN directory. Since the driver is not signed, you might have to install it manually.
-	2) Since I've used VS2010 to build the driver, you will need to have the VS2010 redist installed.
-	3) Many resolutions/formats are not working yet... For example: The kinect will only agree to output VGA resolution.
-	4) I don't have a linux machine so I didn't try it, but my guess is that it would work just fine...
 
 PrimeSense NITE algorithm:
 	If you want to try it please do the following:
@@ -25,9 +23,13 @@ PrimeSense NITE algorithm:
 	2) Install Sensor (this version...)
 	3) Install NITE (from www.openni.org)
 	4) Run the NiViewer sample to make sure depth & image streams are working.
-	5) Run the NiUserTracker sample play with the skeleton. Don't forget to start with the calibration pose! (Explained in the PDFs)
-	6) Some of NITE samples are using 320x240 resolution. You need to change it to 640x480 in the XML files inside the Data directory.
-	7) Try the Sample-PointViewer sample for hand tracking demo.
+	5) Run the OpenNI/NiUserTracker sample play with the skeleton. Don't forget to start with the calibration pose! (Explained in the PDFs)
+	6) Try the NITE/Sample-PointViewer sample for the hand tracking demo.
+
+	Note: All of the NITE samples are using 320x240 resolution. You need to change it to 640x480 in the XML files inside the Data directory.
+
+TIPs:
+	1) If you want to see the IR stream, edit the "OpenNI\Data\SamplesConfig.xml" file and change all the "Image" words into "IR".
 
 Release Notes:
 --------------
