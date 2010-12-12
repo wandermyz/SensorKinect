@@ -168,11 +168,14 @@ XnStatus XnSensorImageStream::ValidateMode()
 	XnOutputFormats nOutputFormat = GetOutputFormat();
 	XnResolutions nResolution = GetResolution();
 
+	// Avin: Removed to enable 1280x1024 Image
 	// check resolution
+	/*
 	if ((nResolution == XN_RESOLUTION_UXGA || nResolution == XN_RESOLUTION_SXGA) && nInputFormat != XN_IO_IMAGE_FORMAT_BAYER)
 	{
 		XN_LOG_WARNING_RETURN(XN_STATUS_DEVICE_BAD_PARAM, XN_MASK_DEVICE_SENSOR, "UXGA resolution is only supported with BAYER input!");
 	}
+	*/
 
 	// check output format
 	if (nOutputFormat == XN_OUTPUT_FORMAT_GRAYSCALE8 && nInputFormat != XN_IO_IMAGE_FORMAT_BAYER)

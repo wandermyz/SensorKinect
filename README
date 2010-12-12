@@ -5,6 +5,11 @@ Kinect Mod:
 -----------
 
 Changes:
+v0.3:
+	1) Added support for high-res 1280x1024 IR and Image (at ~10 FPS)
+	   Checkout the file OPENNI\Data\SamplesConfig.xml for usage example.
+	   (Copy it to your OpenNI\Data dir and use NiViewer to test the different resolutions)
+
 v0.2:
 	1) VS2010 redist will now be installed automatically.
 	2) The driver will now also be installed automatically on both x86 and x64 machines.

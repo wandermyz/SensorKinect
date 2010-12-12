@@ -117,11 +117,14 @@ XnStatus XnFirmwareStreams::CheckClaimStream(const XnChar* strType, XnResolution
 				XN_LOG_WARNING_RETURN(XN_STATUS_DEVICE_BAD_PARAM, XN_MASK_DEVICE_SENSOR, "Cannot set depth stream to resolution %d when IR is set to resolution %d!", nRes, pIRStreamData->nRes);
 			}
 
+			// Avin: Removed to enable 1280x1024 IR
+			/*
 			// check FPS
 			if (pIRStreamData->nFPS != nFPS)
 			{
 				XN_LOG_WARNING_RETURN(XN_STATUS_DEVICE_BAD_PARAM, XN_MASK_DEVICE_SENSOR, "Depth and IR streams must have the same FPS!");
 			}
+			*/
 		}
 	}
 	else if (strcmp(strType, XN_STREAM_TYPE_IR) == 0)
@@ -150,10 +153,14 @@ XnStatus XnFirmwareStreams::CheckClaimStream(const XnChar* strType, XnResolution
 			}
 
 			// check FPS
+			// Avin: Removed to enable 1280x1024 IR
+			/*
+			
 			if (pDepthStreamData->nFPS != nFPS)
 			{
 				XN_LOG_WARNING_RETURN(XN_STATUS_DEVICE_BAD_PARAM, XN_MASK_DEVICE_SENSOR, "Depth and IR streams must have the same FPS!");
 			}
+			*/
 		}
 	}
 	else if (strcmp(strType, XN_STREAM_TYPE_IMAGE) == 0)
