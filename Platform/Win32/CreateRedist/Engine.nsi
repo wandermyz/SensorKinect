@@ -131,6 +131,10 @@ Section "Sensor" Sensor
   
   SetOutPath "$INSTDIR\Tools"
   File /r ..\tools\*.*
+  
+  SetOutPath "$INSTDIR\SampleXMLs"
+  File /r ..\..\..\NITE
+  File /r ..\..\..\OPENNI
 
   ; Register it in OpenNI
   ReadRegStr $OPEN_NI_INST HKLM "Software\OpenNI" "InstallDir"
