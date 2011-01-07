@@ -67,10 +67,10 @@
 //---------------------------------------------------------------------------
 // XnSensorDepthStream class
 //---------------------------------------------------------------------------
-XnSensorDepthStream::XnSensorDepthStream(const XnChar* strName, XnSensorObjects* pObjects, XnUInt32 nBufferCount) : 
+XnSensorDepthStream::XnSensorDepthStream(const XnChar* strDeviceName, const XnChar* strName, XnSensorObjects* pObjects, XnUInt32 nBufferCount) : 
 	XnDepthStream(strName, FALSE, XN_DEVICE_SENSOR_MAX_DEPTH, XN_SHIFTS_MAX_SHIFT),
 	m_Helper(pObjects),
-	m_BufferPool(nBufferCount, strName, XN_DEPTH_MAX_BUFFER_SIZE),
+	m_BufferPool(nBufferCount, strDeviceName, strName, XN_DEPTH_MAX_BUFFER_SIZE),
 	m_SharedBufferName(XN_STREAM_PROPERTY_SHARED_BUFFER_NAME, m_BufferPool.GetSharedMemoryName()),
 	m_InputFormat(XN_STREAM_PROPERTY_INPUT_FORMAT, XN_DEPTH_STREAM_DEFAULT_INPUT_FORMAT),
 	m_DepthRegistration(XN_STREAM_PROPERTY_REGISTRATION, XN_DEPTH_STREAM_DEFAULT_REGISTRATION),
@@ -271,6 +271,7 @@ XnStatus XnSensorDepthStream::ConfigureStreamImpl()
 	nRetVal = m_Helper.GetCmosInfo()->SetCmosConfig(XN_CMOS_TYPE_DEPTH, GetResolution(), GetFPS());
 	XN_IS_STATUS_OK(nRetVal);
 
+	// --avin mod--
 	//Turn off the IR projector anti-cover thingy. I find it annoying and It's off on the XBox360 so it must be safe :-)
 	//This is probably not the best way to do it, but adding it as a real param is too much work for me at the moment...
 	XnHostProtocolSetParam(GetHelper()->GetPrivateData(), 0x105, 0);

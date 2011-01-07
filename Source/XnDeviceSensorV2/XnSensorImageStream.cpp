@@ -54,10 +54,10 @@
 //---------------------------------------------------------------------------
 // XnSensorImageStream class
 //---------------------------------------------------------------------------
-XnSensorImageStream::XnSensorImageStream(const XnChar* StreamName, XnSensorObjects* pObjects, XnUInt32 nBufferCount) : 
+XnSensorImageStream::XnSensorImageStream(const XnChar* strDeviceName, const XnChar* StreamName, XnSensorObjects* pObjects, XnUInt32 nBufferCount) : 
 	XnImageStream(StreamName, FALSE),
 	m_Helper(pObjects),
-	m_BufferPool(nBufferCount, StreamName, GetMaxBufferSize(m_Helper.GetFirmwareVersion())),
+	m_BufferPool(nBufferCount, strDeviceName, StreamName, GetMaxBufferSize(m_Helper.GetFirmwareVersion())),
 	m_SharedBufferName(XN_STREAM_PROPERTY_SHARED_BUFFER_NAME, m_BufferPool.GetSharedMemoryName()),
 	m_InputFormat(XN_STREAM_PROPERTY_INPUT_FORMAT, XN_IMAGE_STREAM_DEFAULT_INPUT_FORMAT),
 	m_AntiFlicker(XN_STREAM_PROPERTY_FLICKER, XN_IMAGE_STREAM_DEFAULT_FLICKER),
@@ -168,7 +168,8 @@ XnStatus XnSensorImageStream::ValidateMode()
 	XnOutputFormats nOutputFormat = GetOutputFormat();
 	XnResolutions nResolution = GetResolution();
 
-	// Avin: Removed to enable 1280x1024 Image
+	// --avin mod--
+	// Removed to enable 1280x1024 Image
 	// check resolution
 	/*
 	if ((nResolution == XN_RESOLUTION_UXGA || nResolution == XN_RESOLUTION_SXGA) && nInputFormat != XN_IO_IMAGE_FORMAT_BAYER)

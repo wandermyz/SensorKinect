@@ -26,7 +26,9 @@
 
 ;SetCompress off
 SetCompress auto
-SetCompressor ZLIB
+SetCompressor /FINAL /SOLID lzma
+SetCompressorDictSize 64
+SetDatablockOptimize on
 
 !include "MUI.nsh"
 !include "x64.nsh"
@@ -116,6 +118,7 @@ Section "Sensor" Sensor
   CreateDirectory "$INSTDIR\Data"
   
   ; Copy all the files from the redist dir
+  File "/oname=$INSTDIR\README.txt" ..\..\..\README
   File "/oname=$INSTDIR\GPL.txt" ..\redist\GPL.txt
   File "/oname=$INSTDIR\LGPL.txt" ..\redist\LGPL.txt
   File "/oname=$INSTDIR\Bin\XnCore.dll" ..\redist\Bin\XnCore.dll
@@ -135,7 +138,7 @@ Section "Sensor" Sensor
   SetOutPath "$INSTDIR\SampleXMLs"
   File /r ..\..\..\NITE
   File /r ..\..\..\OPENNI
-
+    
   ; Register it in OpenNI
   ReadRegStr $OPEN_NI_INST HKLM "Software\OpenNI" "InstallDir"
   ; Also add OPEN_NI_INSTALL_PATH to current environment (current environment is not updated by writing to registry)

@@ -34,6 +34,7 @@
 #include <XnPlatform.h>
 #include <XnUSB.h>
 #include <XnStreamParams.h>
+#include <XnDevice.h>
 
 //---------------------------------------------------------------------------
 // Structures & Enums
@@ -88,16 +89,19 @@ public:
 
 	XnStatus CloseDevice();
 
-	static XnStatus GetNumOfSensors(XnUInt32* pnNumSensors);
+	static XnStatus EnumerateSensors(XnConnectionString* aConnectionStrings, XnUInt32* pnCount);
 
 	inline XnBool IsMiscEndpointSupported() const { return m_bMiscSupported; }
 
 	XnStatus SetCallback(XnUSBEventCallbackFunctionPtr pCallbackPtr, void* pCallbackData);
 
+	const XnChar* GetDevicePath();
+
 private:
 	XN_SENSOR_HANDLE* m_pSensorHandle;
 	XnBool m_bMiscSupported;
 	XnSensorUsbInterface m_interface;
+	XnChar m_strDeviceName[XN_DEVICE_MAX_STRING_LENGTH];
 };
 
 #endif //__XN_DEVICE_SENSOR_I_O_H__

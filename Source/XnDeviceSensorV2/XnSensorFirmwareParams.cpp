@@ -451,7 +451,8 @@ XnStatus XnSensorFirmwareParams::SetImageResolution(XnUInt64 nValue)
 	case XN_RESOLUTION_VGA:
 		break;
 	case XN_RESOLUTION_SXGA:
-		// Avin: Removed to enable 1280x1024 Image
+		// --avin mod--
+		// Removed to enable 1280x1024 Image
 		/*	
 		if (m_pInfo->nFWVer < XN_SENSOR_FW_VER_5_3)
 		{
