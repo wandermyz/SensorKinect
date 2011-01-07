@@ -27,6 +27,7 @@ mkdir -p ../Redist/Config
 # copy files to redist
 cp ../../../GPL.txt ../Redist
 cp ../../../LGPL.txt ../Redist
+cp ../../../README ../Redist
 cp ../Bin/Release/libXnDeviceSensorV2.* ../Redist/Lib
 cp ../Bin/Release/libXnDeviceFile.* ../Redist/Lib
 cp ../Bin/Release/libXnDDK.* ../Redist/Lib
