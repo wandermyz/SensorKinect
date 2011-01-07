@@ -32,13 +32,27 @@ v0.1:
 
 Install notes:
 	1) Install unstable OpenNI (http://www.openni.org/downloadfiles/openni-binaries/20-latest-unstable)
+	   On Linux/Mac please do: ./sudo install.sh
 	2) Install Sensor (this version...)
+	   On Linux/Mac please do: ./sudo install.sh
 	3) Install unstable NITE (http://www.openni.org/downloadfiles/openni-compliant-middleware-binaries/33-latest-unstable)
+	   On Linux/Mac please do: ./sudo install.sh
 	   Use this license when asked during the installation: 0KOIk2JeIBYClPWVnMoRKn5cdY4=
 	4) Test #1: Run the NiViewer sample to make sure depth & image streams are working.
 	5) Test #2: Run the OpenNI/NiUserTracker sample play with the skeleton. Don't forget to start with the calibration pose! (Explained in the PDFs)
 	6) Test #3: Try the NITE/Sample-PointViewer sample for the hand tracking demo.
 
+	For Mac/Linux, you will need to install the latest LibUSB.
+	Linux:
+		1) Run: sudo apt-get install libusb-1.0-0-dev
+		2) Run: sudo apt-get install freeglut3-dev
+	MaxOSX:
+		1) Intall MacPorts from: http://distfiles.macports.org/MacPorts/MacPorts-1.9.2-10.6-SnowLeopard.dmg
+		2) Run: sudo port install libtool
+		3) Run: sudo port install libusb-devel +universal
+		   Note: Do not forget the +universal, it's very important!!
+		   If you're previously already installed libusb-devel then use "sudo port uninstall libusb-devel" and reinstall it again with the +universal flag.
+	
 	Note: All of the NITE samples are using 320x240 resolution. You need to change it to 640x480 in the XML files inside the Data directory.
 	      I have prepared preconfigured XMLs in the "NITE\Data" dir. Just copy them to "c:\Program Files\Prime Sense\NITE\Data".
 
