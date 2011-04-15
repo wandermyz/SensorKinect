@@ -8,9 +8,9 @@ INSTALL_ETC=/usr/etc/primesense
 INSTALL_RULES=/etc/udev/rules.d
 
 if [ "`uname -s`" == "Darwin" ]; then
-    MODULES="libXnDeviceSensorV2.dylib libXnDeviceFile.dylib"
+    MODULES="libXnDeviceSensorV2KM.dylib libXnDeviceFile.dylib"
 else
-    MODULES="libXnDeviceSensorV2.so libXnDeviceFile.so"
+    MODULES="libXnDeviceSensorV2KM.so libXnDeviceFile.so"
 fi
 
 RULES_FILE="55-primesense-usb.rules"
@@ -67,7 +67,7 @@ if [ "$INSTALL" == "1" ]; then
 
     # copy config file
     printf "copying server config file..."
-    cp Config/GlobalDefaults.ini $INSTALL_ETC
+    cp Config/GlobalDefaultsKinect.ini $INSTALL_ETC
     printf "OK\n"
 
     # make server run as root
