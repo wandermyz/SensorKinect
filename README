@@ -1,5 +1,5 @@
-PrimeSense Sensor Module for OpenNI (Version 5.0.3.3 Stable version - Jul 5th 2011)
------------------------------------------------------------------------------------
+PrimeSense Sensor Module for OpenNI (Version 5.0.3.4 Unstable version - Jul 19th 2011)
+--------------------------------------------------------------------------------------
 
 Kinect Mod:
 -----------
@@ -9,12 +9,16 @@ You must use this kinect mod version with the unstable OpenNI release which is a
 http://www.openni.org/downloadfiles/opennimodules/openni-binaries/20-latest-unstable
 
 Changes:
+v0.7:
+	1) Updated codebase to the latest OpenNI / Sensor version (1.3.2.3 / 5.0.3.34)
+	2) Added a 64-bit binary installer for Windows.
+
 v0.6:
 	1) Updated codebase to the latest OpenNI / Sensor version (1.3.2.1 / 5.0.3.33)
 
 v0.5:
 	1) Updated codebase to the latest OpenNI / Sensor version (1.1.0.39 / 5.0.1.32)
-	2) Changed to install directory from Sensor to SensorKinect to co-exist with the orignal PrimeSense Sensor module.
+	2) Changed to install directory from Sensor to SensorKinect to co-exist with the original PrimeSense Sensor module.
 
 v0.4:
 	1) Merged code with the new unstable sensor driver from PrimeSense that adds MacOSX and multiple sensor support.
@@ -53,7 +57,7 @@ Install notes:
 		1) Run: sudo apt-get install libusb-1.0-0-dev
 		2) Run: sudo apt-get install freeglut3-dev
 	MaxOSX:
-		1) Intall MacPorts from: http://distfiles.macports.org/MacPorts/MacPorts-1.9.2-10.6-SnowLeopard.dmg
+		1) Install MacPorts from: http://distfiles.macports.org/MacPorts/MacPorts-1.9.2-10.6-SnowLeopard.dmg
 		2) Run: sudo port install libtool
 		3) Run: sudo port install libusb-devel +universal
 		   Note: Do not forget the +universal, it's very important!!
