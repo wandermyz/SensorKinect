@@ -1,3 +1,9 @@
+***********************************
+This is a modifed version of SensorKienct for specific purpose. Do not use this for playing Kinect with OpenNI. Use its original repository at https://github.com/avin2/SensorKinect instead.
+***********************************
+
+
+
 PrimeSense Sensor Module for OpenNI (Version 5.0.3.4 Unstable version - Jul 19th 2011)
 --------------------------------------------------------------------------------------
 
