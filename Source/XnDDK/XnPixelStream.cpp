@@ -324,7 +324,10 @@ XnStatus XnPixelStream::ReadImpl(XnStreamData* pStreamOutput)
 		XN_IS_STATUS_OK(nRetVal);
 	}
 
-	return (XN_STATUS_OK);
+	//add by Wander: do vertical mirror
+	nRetVal = XnFormatsMirrorVerticalPixelData(GetOutputFormat(), (XnUChar*)pStreamOutput->pData, pStreamOutput->nDataSize, GetCropping()->bEnabled ? GetCropping()->nXSize : GetXRes());
+
+	return (nRetVal);
 }
 
 XnStatus XnPixelStream::Mirror(XnStreamData* pStreamOutput) const

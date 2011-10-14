@@ -88,4 +88,8 @@ XN_FORMATS_API XnStatus XnFormatsShutdown();
 */
 XN_FORMATS_API XnStatus XnFormatsMirrorPixelData(XnOutputFormats nOutputFormat, XnUChar* pBuffer, XnUInt32 nBufferSize, XnUInt32 nXRes);
 
+//add by Wander
+XN_FORMATS_API XnStatus XnFormatsMirrorVerticalPixelData(XnOutputFormats nOutputFormat, XnUChar* pBuffer, XnUInt32 nBufferSize, XnUInt32 nXRes);
+
+
 #endif //_XN_FORMATS_H_
