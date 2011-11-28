@@ -86,6 +86,7 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Lib64\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -212,7 +213,7 @@
       <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>openNI64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>openNI64.lib;XnCore64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>../../Bin64/$(Configuration)/$(ProjectName)64.dll</OutputFile>
       <AdditionalLibraryDirectories>$(OPEN_NI_LIB64);../../Lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -228,6 +229,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Source\XnFormats\XnFormats.cpp" />
     <ClCompile Include="..\..\..\..\Source\XnFormats\XnFormatsMirror.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnFormats\XnFormatsMirrorVertical.cpp" />
     <ClCompile Include="..\..\..\..\Source\XnFormats\XnFormatsStatus.cpp" />
     <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcapimin.c" />
     <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcapistd.c" />

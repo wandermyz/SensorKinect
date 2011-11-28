@@ -171,6 +171,9 @@
     <ClCompile Include="..\..\..\..\Source\XnFormats\XnStreamCompression.cpp">
       <Filter>Source Files\Codecs</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnFormats\XnFormatsMirrorVertical.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\Source\XnFormats\XnFormats.h">

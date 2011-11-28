@@ -29,6 +29,10 @@ obj/
 [Dd]ebug*/
 [Rr]elease*/
 Ankh.NoLoad
+Win32Debug/
+x64Debug/
+Win32Release/
+x64Release/
 
 #Tooling
 _ReSharper*/
@@ -36,7 +40,11 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 
 #Project files
-[Bb]uild/
+#[Bb]uild/
+
+#Upgrade files
+_UpgradeReport_Files
+UpgradeLog.XML
 
 #Subversion files
 .svn
