@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FB08A9D1-10AF-418D-8786-F58FDF11254D}</ProjectGuid>
+    <RootNamespace>XnDDK</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)$(Configuration)\</IntDir>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\Bin64\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)$(Configuration)\</IntDir>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\Bin64\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;..\..\..\..\Source;..\..\..\..\Source\XnCore\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;XN_DDK_EXPORTS;XN_CROSS_PLATFORM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>openNI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin/$(Configuration)/$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OPEN_NI_LIB);../../Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../Bin/$(Configuration)/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../../Lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;..\..\..\..\Source;..\..\..\..\Source\XnCore\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;XN_DDK_EXPORTS;XN_CROSS_PLATFORM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>openNI64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin64/$(Configuration)/$(ProjectName)64.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OPEN_NI_LIB64);../../Lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../Bin64/$(Configuration)/$(ProjectName)64.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../../Lib64/$(Configuration)/$(ProjectName)64.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/fp:fast /Qprec-div- /Qprec-sqrt- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;..\..\..\..\Source;..\..\..\..\Source\XnCore\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;XN_DDK_EXPORTS;XN_CROSS_PLATFORM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>openNI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin/$(Configuration)/$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OPEN_NI_LIB);../../Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../Bin/$(Configuration)/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../Lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/fp:fast /Qprec-div- /Qprec-sqrt- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;..\..\..\..\Source;..\..\..\..\Source\XnCore\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;XN_DDK_EXPORTS;XN_CROSS_PLATFORM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>openNI64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin64/$(Configuration)/$(ProjectName)64.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OPEN_NI_LIB64);../../Lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../Bin64/$(Configuration)/$(ProjectName)64.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../Lib64/$(Configuration)/$(ProjectName)64.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDDK.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDDKStatus.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnShiftToDepth.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnPropertySet.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamData.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamDataSet.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnAudioStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnBufferPool.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDepthStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceBase.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceBaseProxy.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceModule.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceModuleHolder.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnFrameBufferManager.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnFrameStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnImageStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnIRStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnPixelStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnShiftToDepthStreamHelper.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnSimpleBufferPool.cpp">
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</PreprocessSuppressLineNumbers>
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</PreprocessSuppressLineNumbers>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamingStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceManager.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceProxy.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnCodecFactory.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDataPacker.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnActualGeneralProperty.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnActualIntProperty.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnActualPropertiesHash.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnActualPropertyFactory.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnActualRealProperty.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnActualStringProperty.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnGeneralProperty.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnIntProperty.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnIntPropertySynchronizer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnProperty.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnRealProperty.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStringProperty.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnBackwardsCompatibility36.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamDevice.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamDeviceStreamHolder.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamReaderDevice.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamReaderStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamReaderStreamHolder.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamWriterDevice.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamWriterStream.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Include\XnDDK.h" />
+    <ClInclude Include="..\..\..\..\Include\XnDDKStatus.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnShiftToDepth.h" />
+    <ClInclude Include="..\..\..\..\Include\XnStreamParams.h" />
+    <ClInclude Include="..\..\..\..\Include\XnDevice.h" />
+    <ClInclude Include="..\..\..\..\Include\XnPropertySet.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnPropertySetInternal.h" />
+    <ClInclude Include="..\..\..\..\Include\XnStreamData.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamDataInternal.h" />
+    <ClInclude Include="..\..\..\..\Include\XnStreamDataSet.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamDataSetInternal.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\IXnDevice.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnAudioStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnBufferPool.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDepthStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceBase.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceBaseProxy.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceInterfaceImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceModule.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceModuleHolder.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnFrameBufferManager.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnFrameStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnImageStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnIRStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnPixelStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnShiftToDepthStreamHelper.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnSimpleBufferPool.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamingStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceFunctionsTypedefs.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceInterfaceAdapter.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceManager.h" />
+    <ClInclude Include="..\..\..\..\Include\XnDeviceProxy.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnCodecFactory.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDataPacker.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnActualGeneralProperty.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnActualIntProperty.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnActualPropertiesHash.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnActualPropertyFactory.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnActualRealProperty.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnActualStringProperty.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnGeneralProperty.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnIntProperty.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnIntPropertySynchronizer.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnProperty.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnRealProperty.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStringProperty.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnBackwardsCompatibility36.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamDevice.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamDeviceStreamHolder.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamReaderDevice.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamReaderStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamReaderStreamHolder.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamWriterDevice.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamWriterStream.h" />
+    <ClInclude Include="..\Res\Resource-DDK.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Include\XnDeviceProto.inl" />
+    <None Include="..\Res\mainicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Res\DDK.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

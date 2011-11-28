@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{59c046ec-7691-4159-b49d-3c8c81558b78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform">
+      <UniqueIdentifier>{21d6aa0c-85b7-4214-8c18-12076700156b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{d5fb7a81-417f-486a-bfb8-c775206211d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Misc">
+      <UniqueIdentifier>{759ebe09-d3ae-47b8-b136-3f11d4be0cb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataTypes">
+      <UniqueIdentifier>{570e2df9-4d38-4b05-b5c5-581777143d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO">
+      <UniqueIdentifier>{14f96669-86fc-470c-97b6-5f63b07fb504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Res">
+      <UniqueIdentifier>{12e87c76-8d42-43a8-8290-98fb63b86bcd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Include\XnPlatformBC.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnCommon\XnCommon.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\XnCore.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnCore\XnCoreGlobals.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\XnVersion.h">
+      <Filter>Source Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnCore\XnBuffer.h">
+      <Filter>Source Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\XnIOFileStream.h">
+      <Filter>Source Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\XnIONetworkStream.h">
+      <Filter>Source Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\XnIOStream.h">
+      <Filter>Source Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Res\Resource-DDK.h">
+      <Filter>Res</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\XnCore\XnCore.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnCore\XnCoreStatus.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnCore\XnVersion.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnCore\XnBuffer.cpp">
+      <Filter>Source Files\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnCore\XnIOFileStream.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnCore\XnIONetworkStream.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Res\DDK.rc">
+      <Filter>Res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Res\mainicon.ico">
+      <Filter>Res</Filter>
+    </None>
+  </ItemGroup>
+</Project>

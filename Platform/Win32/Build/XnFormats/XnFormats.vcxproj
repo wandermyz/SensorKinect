@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9CAEC325-EEE6-4A91-8819-004E20C419C0}</ProjectGuid>
+    <RootNamespace>XnFormats</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)$(Configuration)\</IntDir>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\Bin64\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)$(Configuration)\</IntDir>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\Bin64\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;..\..\..\..\Source\;..\..\..\..\Source\External\LibJPEG;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;XN_FORMATS_EXPORTS;XN_CROSS_PLATFORM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>openNI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin/$(Configuration)/$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OPEN_NI_LIB);../../Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../Bin/$(Configuration)/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../../Lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;..\..\..\..\Source\;..\..\..\..\Source\External\LibJPEG;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;XN_FORMATS_EXPORTS;XN_CROSS_PLATFORM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>openNI64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin64/$(Configuration)/$(ProjectName)64.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OPEN_NI_LIB64);../../Lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../Bin64/$(Configuration)/$(ProjectName)64.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../../Lib64/$(Configuration)/$(ProjectName)64.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/fp:fast /Qprec-div- /Qprec-sqrt- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;..\..\..\..\Source\;..\..\..\..\Source\External\LibJPEG;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;XN_FORMATS_EXPORTS;XN_CROSS_PLATFORM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>openNI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin/$(Configuration)/$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OPEN_NI_LIB);../../Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../Bin/$(Configuration)/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../Lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/fp:fast /Qprec-div- /Qprec-sqrt- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;..\..\..\..\Source\;..\..\..\..\Source\External\LibJPEG;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;XN_FORMATS_EXPORTS;XN_CROSS_PLATFORM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>openNI64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin64/$(Configuration)/$(ProjectName)64.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OPEN_NI_LIB64);../../Lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../Bin64/$(Configuration)/$(ProjectName)64.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../Lib64/$(Configuration)/$(ProjectName)64.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\XnFormats\XnFormats.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnFormats\XnFormatsMirror.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnFormats\XnFormatsStatus.cpp" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcapimin.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcapistd.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jccoefct.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jccolor.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcdctmgr.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jchuff.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcinit.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcmainct.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcmarker.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcmaster.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcomapi.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcparam.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcphuff.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcprepct.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jcsample.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jctrans.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdapimin.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdapistd.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdatadst.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdatasrc.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdcoefct.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdcolor.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jddctmgr.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdhuff.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdinput.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdmainct.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdmarker.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdmaster.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdmerge.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdphuff.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdpostct.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdsample.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jdtrans.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jerror.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jfdctflt.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jfdctfst.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jfdctint.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jidctflt.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jidctfst.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jidctint.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jidctred.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jmemmgr.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jmemnobs.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jquant1.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jquant2.c" />
+    <ClCompile Include="..\..\..\..\Source\External\LibJPEG\jutils.c" />
+    <ClCompile Include="..\..\..\..\Source\XnFormats\XnCodecs.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnFormats\XnStreamCompression.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\XnFormats\XnFormats.h" />
+    <ClInclude Include="..\..\..\..\Include\XnFormatsStatus.h" />
+    <ClInclude Include="..\..\..\..\Include\XnStreamFormats.h" />
+    <ClInclude Include="..\..\..\..\Source\External\LibJPEG\cderror.h" />
+    <ClInclude Include="..\..\..\..\Source\External\LibJPEG\jchuff.h" />
+    <ClInclude Include="..\..\..\..\Source\External\LibJPEG\jconfig.h" />
+    <ClInclude Include="..\..\..\..\Source\External\LibJPEG\jdct.h" />
+    <ClInclude Include="..\..\..\..\Source\External\LibJPEG\jdhuff.h" />
+    <ClInclude Include="..\..\..\..\Source\External\LibJPEG\jerror.h" />
+    <ClInclude Include="..\..\..\..\Source\External\LibJPEG\jinclude.h" />
+    <ClInclude Include="..\..\..\..\Source\External\LibJPEG\jmemsys.h" />
+    <ClInclude Include="..\..\..\..\Source\External\LibJPEG\jmorecfg.h" />
+    <ClInclude Include="..\..\..\..\Source\External\LibJPEG\jpegint.h" />
+    <ClInclude Include="..\..\..\..\Source\External\LibJPEG\jpeglib.h" />
+    <ClInclude Include="..\..\..\..\Source\External\LibJPEG\jversion.h" />
+    <ClInclude Include="..\..\..\..\Source\XnFormats\Xn16zCodec.h" />
+    <ClInclude Include="..\..\..\..\Source\XnFormats\Xn16zEmbTablesCodec.h" />
+    <ClInclude Include="..\..\..\..\Source\XnFormats\Xn8zCodec.h" />
+    <ClInclude Include="..\..\..\..\Source\XnFormats\XnCodec.h" />
+    <ClInclude Include="..\..\..\..\Source\XnFormats\XnCodecBase.h" />
+    <ClInclude Include="..\..\..\..\Source\XnFormats\XnJpegCodec.h" />
+    <ClInclude Include="..\..\..\..\Source\XnFormats\XnNiCodec.h" />
+    <ClInclude Include="..\..\..\..\Source\XnFormats\XnStreamCompression.h" />
+    <ClInclude Include="..\..\..\..\Source\XnFormats\XnUncompressedCodec.h" />
+    <ClInclude Include="..\Res\Resource-DDK.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Source\External\LibJPEG\jconfig.vc" />
+    <None Include="..\Res\mainicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Res\DDK.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

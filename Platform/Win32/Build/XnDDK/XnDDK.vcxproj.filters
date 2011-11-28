@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2475768b-62f6-4d77-9232-d7d2233a1dd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DeviceInterface">
+      <UniqueIdentifier>{415f179e-cc47-4790-bba0-ecc59bf8bfa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DeviceBase">
+      <UniqueIdentifier>{5392ef24-615d-4e06-b252-15e2f2d0c693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DeviceProxy">
+      <UniqueIdentifier>{f1744b3f-1cbd-4aa5-8894-634de72b2143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Packing">
+      <UniqueIdentifier>{f130e10c-7ece-4134-8374-32d7c53c9324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Properties">
+      <UniqueIdentifier>{acaaf7a5-1151-497a-9253-87be954668f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BackwardsCompatibility">
+      <UniqueIdentifier>{f8ddc48a-46a7-48d9-978f-86ccf100fcd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\StreamDevice">
+      <UniqueIdentifier>{f527fcf6-8dad-490f-b41f-dc576de50903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Res">
+      <UniqueIdentifier>{106fb740-5461-4a9a-ab78-b03e946cf835}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDDK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDDKStatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnShiftToDepth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnPropertySet.cpp">
+      <Filter>Source Files\DeviceInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamData.cpp">
+      <Filter>Source Files\DeviceInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamDataSet.cpp">
+      <Filter>Source Files\DeviceInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnAudioStream.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnBufferPool.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDepthStream.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceBase.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceBaseProxy.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceModule.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceModuleHolder.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceStream.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnFrameBufferManager.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnFrameStream.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnImageStream.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnIRStream.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnPixelStream.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnShiftToDepthStreamHelper.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnSimpleBufferPool.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamingStream.cpp">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceManager.cpp">
+      <Filter>Source Files\DeviceProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDeviceProxy.cpp">
+      <Filter>Source Files\DeviceProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnCodecFactory.cpp">
+      <Filter>Source Files\Packing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnDataPacker.cpp">
+      <Filter>Source Files\Packing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnActualGeneralProperty.cpp">
+      <Filter>Source Files\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnActualIntProperty.cpp">
+      <Filter>Source Files\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnActualPropertiesHash.cpp">
+      <Filter>Source Files\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnActualPropertyFactory.cpp">
+      <Filter>Source Files\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnActualRealProperty.cpp">
+      <Filter>Source Files\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnActualStringProperty.cpp">
+      <Filter>Source Files\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnGeneralProperty.cpp">
+      <Filter>Source Files\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnIntProperty.cpp">
+      <Filter>Source Files\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnIntPropertySynchronizer.cpp">
+      <Filter>Source Files\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnProperty.cpp">
+      <Filter>Source Files\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnRealProperty.cpp">
+      <Filter>Source Files\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStringProperty.cpp">
+      <Filter>Source Files\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnBackwardsCompatibility36.cpp">
+      <Filter>Source Files\BackwardsCompatibility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamDevice.cpp">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamDeviceStreamHolder.cpp">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamReaderDevice.cpp">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamReaderStream.cpp">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamReaderStreamHolder.cpp">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamWriterDevice.cpp">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDDK\XnStreamWriterStream.cpp">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Include\XnDDK.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\XnDDKStatus.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnShiftToDepth.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\XnStreamParams.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\XnDevice.h">
+      <Filter>Source Files\DeviceInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\XnPropertySet.h">
+      <Filter>Source Files\DeviceInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnPropertySetInternal.h">
+      <Filter>Source Files\DeviceInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\XnStreamData.h">
+      <Filter>Source Files\DeviceInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamDataInternal.h">
+      <Filter>Source Files\DeviceInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\XnStreamDataSet.h">
+      <Filter>Source Files\DeviceInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamDataSetInternal.h">
+      <Filter>Source Files\DeviceInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\IXnDevice.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnAudioStream.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnBufferPool.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDepthStream.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceBase.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceBaseProxy.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceInterfaceImpl.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceModule.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceModuleHolder.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceStream.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnFrameBufferManager.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnFrameStream.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnImageStream.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnIRStream.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnPixelStream.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnShiftToDepthStreamHelper.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnSimpleBufferPool.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamingStream.h">
+      <Filter>Source Files\DeviceBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceFunctionsTypedefs.h">
+      <Filter>Source Files\DeviceProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceInterfaceAdapter.h">
+      <Filter>Source Files\DeviceProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDeviceManager.h">
+      <Filter>Source Files\DeviceProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Include\XnDeviceProxy.h">
+      <Filter>Source Files\DeviceProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnCodecFactory.h">
+      <Filter>Source Files\Packing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnDataPacker.h">
+      <Filter>Source Files\Packing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnActualGeneralProperty.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnActualIntProperty.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnActualPropertiesHash.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnActualPropertyFactory.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnActualRealProperty.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnActualStringProperty.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnGeneralProperty.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnIntProperty.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnIntPropertySynchronizer.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnProperty.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnRealProperty.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStringProperty.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnBackwardsCompatibility36.h">
+      <Filter>Source Files\BackwardsCompatibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamDevice.h">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamDeviceStreamHolder.h">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamReaderDevice.h">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamReaderStream.h">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamReaderStreamHolder.h">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamWriterDevice.h">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\XnDDK\XnStreamWriterStream.h">
+      <Filter>Source Files\StreamDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Res\Resource-DDK.h">
+      <Filter>Res</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Include\XnDeviceProto.inl">
+      <Filter>Source Files\DeviceInterface</Filter>
+    </None>
+    <None Include="..\Res\mainicon.ico">
+      <Filter>Res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Res\DDK.rc">
+      <Filter>Res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>XnDeviceSensorV2KM</ProjectName>
+    <ProjectGuid>{1653839A-ABA5-4c0e-9EA2-2640B0275894}</ProjectGuid>
+    <RootNamespace>XnDeviceSensorV2KM</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)$(Configuration)\</IntDir>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\Bin64\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)$(Configuration)\</IntDir>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\Bin64\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;..\..\..\..\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;XN_DEVICE_EXPORTS;XN_LEAN_SENSOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>setupapi.lib;XnDDK.lib;XnFormats.lib;XnCore.lib;openNI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin/$(Configuration)/$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OPEN_NI_LIB);../../Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../Bin/$(Configuration)/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <HeapReserveSize>0</HeapReserveSize>
+      <HeapCommitSize>0</HeapCommitSize>
+      <StackReserveSize>0</StackReserveSize>
+      <StackCommitSize>0</StackCommitSize>
+      <ImportLibrary>../../Lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;..\..\..\..\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;XN_DEVICE_EXPORTS;XN_LEAN_SENSOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>setupapi.lib;XnDDK64.lib;XnFormats64.lib;XnCore64.lib;openNI64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin64/$(Configuration)/$(ProjectName)64.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OPEN_NI_LIB64);../../Lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../Bin64/$(Configuration)/$(ProjectName)64.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <HeapReserveSize>0</HeapReserveSize>
+      <HeapCommitSize>0</HeapCommitSize>
+      <StackReserveSize>0</StackReserveSize>
+      <StackCommitSize>0</StackCommitSize>
+      <ImportLibrary>../../Lib64/$(Configuration)/$(ProjectName)64.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/fp:fast /Qprec-div- /Qprec-sqrt- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;..\..\..\..\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;XN_DEVICE_EXPORTS;XN_CROSS_PLATFORM;XN_LEAN_SENSOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>setupapi.lib;XnDDK.lib;XnFormats.lib;XnCore.lib;openNI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin/$(Configuration)/$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OPEN_NI_LIB);../../Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../Bin/$(Configuration)/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../Lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/fp:fast /Qprec-div- /Qprec-sqrt- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;..\..\..\..\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;XN_DEVICE_EXPORTS;XN_CROSS_PLATFORM;XN_LEAN_SENSOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OPEN_NI_INCLUDE);..\..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>setupapi.lib;XnDDK64.lib;XnFormats64.lib;XnCore64.lib;openNI64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin64/$(Configuration)/$(ProjectName)64.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OPEN_NI_LIB64);../../Lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../Bin64/$(Configuration)/$(ProjectName)64.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../Lib64/$(Configuration)/$(ProjectName)64.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnCmosInfo.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnDeviceSensor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnDeviceSensorInit.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorFixedParams.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorFPS.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\Bayer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\Registration.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\Uncomp.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\YUV.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnDeviceSensorIO.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnDeviceSensorProtocol.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnDataProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnFrameStreamProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnStreamProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnWholePacketProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnDepthProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnPacked11DepthProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnPSCompressedDepthProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnUncompressedDepthProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnBayerImageProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnImageProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnJpegImageProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnJpegToRGBImageProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnPSCompressedImageProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnUncompressedBayerProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnUncompressedYUVImageProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnUncompressedYUVtoRGBImageProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnAudioProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnIRProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorAudioStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorDepthStream.cpp">
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessSuppressLineNumbers>
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</PreprocessSuppressLineNumbers>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorImageStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorIRStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorStreamHelper.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSharedMemoryBufferPool.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnDataProcessorHolder.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnFirmwareCommands.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnFirmwareInfo.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnFirmwareStreams.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnHostProtocol.cpp">
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</PreprocessSuppressLineNumbers>
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</PreprocessSuppressLineNumbers>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorFirmware.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorFirmwareParams.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorClient.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorClientStream.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorServer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorsManager.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnServerSensorInvoker.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnServerSession.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnExportedSensorDevice.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnExportedSensorGenerator.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnMultiPropChangedHandler.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorAudioGenerator.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorDepthGenerator.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorDevice.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorGenerator.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorImageGenerator.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorIRGenerator.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorMapGenerator.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorOpenNiteImpl.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorProductionNode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnCmosInfo.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnDeviceSensor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnDeviceSensorInit.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnParams.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorFixedParams.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorFPS.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\Bayer.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\Registration.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\Uncomp.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\YUV.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnDeviceSensorIO.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnDeviceSensorProtocol.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnDataProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnFrameStreamProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnStreamProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnWholePacketProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnDepthProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnPacked11DepthProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnPSCompressedDepthProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnUncompressedDepthProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnBayerImageProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnImageProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnJpegImageProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnJpegToRGBImageProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnPSCompressedImageProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnUncompressedBayerProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnUncompressedYUVImageProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnUncompressedYUVtoRGBImageProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnAudioProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnIRProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\IXnSensorStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorAudioStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorDepthStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorImageStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorIRStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorStreamHelper.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSharedMemoryBufferPool.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnDataProcessorHolder.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnFirmwareCommands.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnFirmwareInfo.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnFirmwareStreams.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnHostProtocol.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorFirmware.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorFirmwareParams.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorClientServer.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorClient.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorClientStream.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorServer.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorServerRunner.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorsManager.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnServerLogger.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnServerSensorInvoker.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnServerSession.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnExportedSensorDevice.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnExportedSensorGenerator.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnMultiPropChangedHandler.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorAudioGenerator.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorDepthGenerator.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorDevice.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorGenerator.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorImageGenerator.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorIRGenerator.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorMapGenerator.h" />
+    <ClInclude Include="..\..\..\..\Source\XnDeviceSensorV2\XnSensorProductionNode.h" />
+    <ClInclude Include="..\Res\Resource-DDK.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Res\DDK.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Res\mainicon.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
